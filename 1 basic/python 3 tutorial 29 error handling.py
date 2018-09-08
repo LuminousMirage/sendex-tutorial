@@ -25,11 +25,15 @@ with open('exampleData.csv') as csvfile:
 ##try this block of code, handle the errors
 	try:
 		whatColor = input('What color do you wish the date for?:')
-		colordex = colors.index(whatColor)
-		theDate = dates[colordex]
-		print('The date of',whatColor,'is:',theDate)
-##in python 2.7 will use the following instead
-##except Exception, e:
+##adding constraints
+		if whatColor in colors:
+			colordex = colors.index(whatColor)
+			theDate = dates[colordex]
+			print('The date of',whatColor,'is:',theDate)
+		else:
+			print('Color not found or it is not a color, please enter another color!')
+##except Exception, e: - used in python 2.7 instead
+##except NameError as e: - specify a variable that does not exist
 ##whatever the exception to the variable of e
 	except Exception as e:
 		print(e)
