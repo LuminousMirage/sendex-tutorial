@@ -38,7 +38,7 @@ print(respData)
 
 ##attempt to visit google search query, read the result. Otherwise, print the exception in string
 try:
-	x = x = urllib.request.urlopen('https://www.google.com/search?q=test')
+	x = urllib.request.urlopen('https://www.google.com/search?q=test')
 	print(x.read())
 except Exception as e:
 	print(str(e))
