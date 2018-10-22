@@ -8,7 +8,7 @@ class Window(Frame):
 ##new function added
 		self.init_window()
 ##create function init_window
-	def init_window(self)
+	def init_window(self):
 ##set the title of the window to GUI
 		self.master.title("GUI")
 ##filling up the window and adjust the dimension
