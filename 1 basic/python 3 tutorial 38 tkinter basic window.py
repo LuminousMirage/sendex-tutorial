@@ -10,7 +10,7 @@ class Window(Frame):
 		self.master = master
 ##root window
 root = Tk()
-##application within that the frame is rooted
+##application within that the frame is rooted, create of an instance
 app = Window(root)
-##initialize and generate the window
+##initialize and generate the window, #mainloop
 root.mainloop()
